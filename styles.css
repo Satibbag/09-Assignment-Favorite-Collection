@@ -1,0 +1,142 @@
+/* Body and content layout */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f5f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* Form section */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #17a2b8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+}
+
+input[type="checkbox"] {
+    align-self: flex-start;
+    transform: scale(1.2);
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #17a2b8;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #138496;
+    transform: scale(1.01);
+}
+
+/* Table section */
+h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    color: #333;
+    width: 60%;
+    margin-bottom: 10px;
+    border-left: 4px solid #17a2b8;
+    padding-left: 8px;
+}
+
+table {
+    width: 60%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1em;
+}
+
+th {
+    background-color: #17a2b8;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #555;
+}
+
+td:nth-child(odd) {
+    background-color: #f3f5f7;
+}
+
+/* Hover effect for table rows */
+tr:hover td {
+    background-color: #e6f2f5;
+}
+
+/* Watched column checkmark and cross styling */
+td:last-child {
+    font-size: 1.5em;
+}
+
+td:last-child .watched {
+    color: #28a745;
+}
+
+td:last-child .not-watched {
+    color: #dc3545;
+}
+
+.watched, .not-watched {
+    font-weight: bold;
+}
